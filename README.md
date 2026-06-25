@@ -15,6 +15,8 @@ Timer Pomodoro para foco e produtividade, com anel de progresso, modos de pausa 
   <a href="https://samuelf27.github.io/pomodoro-focus/"><b>🔗 Ver ao vivo</b></a>
 </p>
 
+<p align="center"><img src="https://raw.githubusercontent.com/Samuelf27/pomodoro-focus/main/preview.png" alt="Preview do projeto" width="760" /></p>
+
 ---
 
 ## 📌 Sobre o projeto
