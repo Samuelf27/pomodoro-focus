@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Timer Pomodoro para foco e produtividade." />
+  <title>Pomodoro Focus ⏱️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-mode="focus">
+  <main class="app">
+    <h1 class="logo">⏱️ Pomodoro <span>Focus</span></h1>
+
+    <div class="modes">
+      <button class="mode active" data-m="focus">Foco</button>
+      <button class="mode" data-m="short">Pausa curta</button>
+      <button class="mode" data-m="long">Pausa longa</button>
+    </div>
+
+    <div class="timer">
+      <svg class="ring" viewBox="0 0 240 240">
+        <circle class="ring__bg" cx="120" cy="120" r="110" />
+        <circle class="ring__fg" id="ring" cx="120" cy="120" r="110" />
+      </svg>
+      <div class="timer__center">
+        <span class="timer__time" id="time">25:00</span>
+        <span class="timer__label" id="label">Hora de focar</span>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button class="btn btn--main" id="startBtn">Iniciar</button>
+      <button class="btn btn--icon" id="resetBtn" aria-label="Reiniciar">↻</button>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><span class="stat__n" id="doneCount">0</span><span class="stat__l">Pomodoros</span></div>
+      <div class="stat"><span class="stat__n" id="focusMin">0</span><span class="stat__l">Min. focado</span></div>
+    </div>
+
+    <p class="hint" id="hint">Dica: 4 pomodoros = 1 ciclo. Depois, faça uma pausa longa. 💪</p>
+  </main>
+
+  <footer class="credit">por <a href="https://github.com/Samuelf27" target="_blank" rel="noopener">Samuel Ferreira</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
